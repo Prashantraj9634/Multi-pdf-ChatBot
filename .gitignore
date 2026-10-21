@@ -1,0 +1,17 @@
+﻿Set-Content -Path .gitignore -Value @"
+# Secrets
+.env
+
+# Virtual Environment
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Local Database & Test Documents
+chroma_db/
+data/PDFs/*
+!data/PDFs/.gitkeep
+"@
